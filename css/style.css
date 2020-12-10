@@ -4,5 +4,17 @@
 }
 
 .container {
-    margin-top: 15px;
+    margin-top: 30px;
+}
+
+textarea {
+    height: 25px;
+}
+
+h2 textarea {
+    height: 40px;
+}
+
+h3 textarea {
+    height: 35px;
 }
