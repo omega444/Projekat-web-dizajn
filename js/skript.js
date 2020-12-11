@@ -39,3 +39,4 @@ console.log("Script running");
 $(document).ready(function(){
     GetData();
 });
+

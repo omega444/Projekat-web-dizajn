@@ -32,13 +32,13 @@
                         <li class="nav-item active"><a class="nav-link" href="#">Upravljanje korisnicima</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"
                                 data-target="#Modal">Prijava</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">Registracija</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"
+                                data-target="#Registracija">Registracija</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#">Korpa</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -50,16 +50,70 @@
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
-                                  <label for="InputEmail">E-mail adresa</label>
-                                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                    <label for="InputEmail">E-mail adresa</label>
+                                    <input type="email" class="form-control" id="InputEmail"
+                                        aria-describedby="emailHelp">
                                 </div>
                                 <div class="form-group">
-                                  <label for="InputPassword">Sifra</label>
-                                  <input type="password" class="form-control" id="InputPassword">
+                                    <label for="InputPassword">Sifra</label>
+                                    <input type="password" class="form-control" id="InputPassword">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Prijavi se</button>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
-                              </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Registracija" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Registrujte se</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="InputKorisnickoIme">Korisnicko ime</label>
+                                    <input type="text" class="form-control" id="InputKorisnickoIme" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPassword">Sifra</label>
+                                    <input type="password" class="form-control" id="InputPassword" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">E-mail adresa</label>
+                                    <input type="email" class="form-control" id="InputEmail"
+                                        aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputIme">Ime</label>
+                                    <input type="text" class="form-control" id="InputIme" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPrezime">Prezime</label>
+                                    <input type="text" class="form-control" id="InputPrezime" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputDatumRodjenja">Datum rodjenja</label>
+                                    <input type="date" id="InputDatumRodjenja" class="form-control datepicker" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputAdresa">Adresa</label>
+                                    <input placeholder="Ulica broj, Grad" type="text" class="form-control"
+                                        id="InputAdresa" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputTelefon">Broj telefona</label>
+                                    <input placeholder="+3810000000000" type="tel" class="form-control"
+                                        id="InputTelefon" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Prijavi se</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -74,11 +128,13 @@
                         <img class="card-img" src="https://i.imgur.com/kTquRc0.jpg" alt="naslovnaStranica">
                     </div>
                     <div class="col-md-8">
-                        <a href="pojedinacnaKnjiga.html"><button type="button" class="btn btn-info float-right mt-4 mr-4">Primeni</button></a>
+                        <a href="pojedinacnaKnjiga.html"><button type="button"
+                                class="btn btn-info float-right mt-4 mr-4">Primeni</button></a>
                         <div class="card-body">
                             <h2 class="card-title"><textarea name="ispravkaNaslova" rows="1">Naslov</textarea></h2>
                             <h3 class="card-text"><textarea name="ispravkaAutora" rows="1">Autor</textarea></h3>
-                            <p class="card-text"><textarea name="ispravkaAutora" rows="1">Godina izdavanja</textarea></p>
+                            <p class="card-text"><textarea name="ispravkaAutora" rows="1">Godina izdavanja</textarea>
+                            </p>
                             <p class="card-text">ISBN</p>
                             <p class="card-text">Broj stranica</p>
                             <p class="card-text"><textarea name="ispravkaAutora" rows="1">Tip poveza</textarea></p>
