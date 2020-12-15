@@ -29,5 +29,6 @@ h3 textarea {
 }
 
 .quantity {
-    max-width: 30% !important;
+    width: 50px !important;
 }
+
