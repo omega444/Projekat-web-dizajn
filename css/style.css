@@ -1,3 +1,7 @@
+body {
+    background-color:rgb(241, 235, 235) !important;
+}
+
 .rating img{
     width: 20px;
     margin-bottom: 1rem;
@@ -9,6 +13,7 @@
 
 textarea {
     height: 25px;
+    max-width: 95%;
 }
 
 h2 textarea {
@@ -18,3 +23,4 @@ h2 textarea {
 h3 textarea {
     height: 35px;
 }
+
