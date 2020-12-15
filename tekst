@@ -1,0 +1,8 @@
+<ul class="list-inline m-0">
+                                                    <li class="list-inline-item">
+                                                        <input class="quantity" min="1" name="quantity" value="1" type="number">
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="modal" data-target="#proveraBrisanja" data-placement="top" title="Obrisi"><i class="fa fa-trash"></i></button>
+                                                    </li>
+                                                </ul>
