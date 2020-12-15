@@ -32,3 +32,21 @@ h3 textarea {
     width: 50px !important;
 }
 
+.rating_bar {
+    width: 120px;
+}
+
+.rating_bar > span:before {
+    content:'★';
+    color: #c7c5c5;
+    cursor:pointer;
+    font-size:24px;
+}
+
+.rating_bar:hover > span:before {
+    color: #4bce32;
+}
+
+.rating_bar > span:hover ~ span:before {
+    color: #c7c5c5;
+}
