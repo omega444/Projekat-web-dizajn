@@ -21,12 +21,12 @@ function ucitajKnjigu(json){
     document.getElementById("Cover").src = knjige[id].slika;
     document.getElementById("Title").innerHTML = knjige[id].naziv;
     document.getElementById("Author").innerHTML = knjige[id].autor;
-    document.getElementById("Year").innerHTML = knjige[id].godinaIzdavanja;
+    document.getElementById("Year").innerHTML = "<b>Godina izdanja: </b>" + knjige[id].godinaIzdavanja;
     document.getElementById("ISBN").innerHTML = "<b>ISBN:</b> " + knjige[id].isbn;
-    document.getElementById("PgNum").innerHTML = "<b>Br. strana:</b> " + knjige[id].brojStranica;
+    document.getElementById("PgNum").innerHTML = knjige[id].brojStranica;
     document.getElementById("CoverType").innerHTML = knjige[id].tipPoveza;
     document.getElementById("Writting").innerHTML = knjige[id].pismo;
-    document.getElementById("Language").innerHTML =  knjige[id].jezik;
+    document.getElementById("Language").innerHTML = knjige[id].jezik;
     document.getElementById("Score").innerHTML = "<b>Ocena:</b> " + knjige[id].ocena;
     document.getElementById("Price").innerHTML = knjige[id].cena;
     document.getElementById("Desc").innerHTML = knjige[id].opis;
