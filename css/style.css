@@ -12,16 +12,23 @@ body {
 }
 
 textarea {
-    height: 25px;
+    height: 26px;
     max-width: 95%;
+    width: 30%;
 }
 
 h2 textarea {
     height: 40px;
+    margin-top: 10px;
 }
 
 h3 textarea {
-    height: 35px;
+    height: 36px;
+}
+
+.desc {
+    width: 95%;
+    height: 125px;
 }
 
 .container-fluid {

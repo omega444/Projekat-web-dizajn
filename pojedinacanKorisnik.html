@@ -78,24 +78,24 @@
                             <form>
                                 <div class="form-group">
                                     <label for="InputKorisnickoIme">Korisnicko ime</label>
-                                    <input type="text" class="form-control" id="InputKorisnickoIme" required>
+                                    <input type="text" class="form-control" id="InputKorisnickoIme" pattern="^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPassword">Sifra</label>
-                                    <input type="password" class="form-control" id="InputPassword" required>
+                                    <input type="password" class="form-control" id="InputPassword" pattern=".{8,}" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputEmail">E-mail adresa</label>
                                     <input type="email" class="form-control" id="InputEmail"
-                                        aria-describedby="emailHelp" required>
+                                        aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputIme">Ime</label>
-                                    <input type="text" class="form-control" id="InputIme" required>
+                                    <input type="text" class="form-control" id="InputIme" pattern="^([A-Za-z])$" maxlength="25" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPrezime">Prezime</label>
-                                    <input type="text" class="form-control" id="InputPrezime" required>
+                                    <input type="text" class="form-control" id="InputPrezime" pattern="^([A-Za-z])$" maxlength="25" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputDatumRodjenja">Datum rodjenja</label>
@@ -108,8 +108,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="InputTelefon">Broj telefona</label>
-                                    <input placeholder="+3810000000000" type="tel" class="form-control"
-                                        id="InputTelefon" required>
+                                    <input placeholder="xxx-xxx-xxxx" type="tel" class="form-control"
+                                        id="InputTelefon" pattern="^\d{3}-\d{3}-\d{4}$" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Prijavi se</button>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
