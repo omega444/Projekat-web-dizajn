@@ -1,0 +1,32 @@
+var firebaseUrl = 'https://projekat-6112b-default-rtdb.firebaseio.com/';
+var firebaseKorisnici = "korisnici.json";
+var korisnici = [];
+
+function GetData() {
+    $.ajax({
+        url: firebaseUrl + firebaseKorisnici,
+        type: "GET",
+        success: function(data){
+            ucitajKorisnika(data);
+        }
+    });
+}
+
+function ucitajKorisnika(json){
+    var id = localStorage.getItem("userID");
+    for (var i in json){
+        korisnici.push(json[i]);
+    }
+
+    document.getElementById("Name").innerHTML = korisnici[id].ime;
+    document.getElementById("Lastname").innerHTML = korisnici[id].prezime;
+    document.getElementById("Birth").innerHTML = "<b>Datum rodjenja: </b>" + korisnici[id].datumRodjenja;
+    document.getElementById("Adress").innerHTML = korisnici[id].adresa;
+    document.getElementById("Username").innerHTML = "<b>Korisnicko ime: </b>" + korisnici[id].username;
+    document.getElementById("Email").innerHTML = korisnici[id].email;
+    document.getElementById("Phone").innerHTML = korisnici[id].telefon;
+}
+
+$(document).ready(function(){
+    GetData();
+});

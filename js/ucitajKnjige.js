@@ -5,12 +5,12 @@ var temp = `
 <div class="card mb-3">
 <div class="row no-gutters">
     <div class="col-md-4">
-        <a href="pojedinacnaKnjiga.html"><img class="card-img" src="#book_cover"
+        <a href="pojedinacnaKnjiga.html" onclick="storeBookData(#book_id)"><img class="card-img" src="#book_cover"
                 alt="naslovnaStranica"></a>
     </div>
     <div class="col-md-8">
         <div class="card-body">
-            <h2 class="card-title"><a href="pojedinacnaKnjiga.html#2">#book_name</a></h2>
+            <h2 class="card-title"><a href="pojedinacnaKnjiga.html#2" onclick="storeBookData(#book_id)">#book_name</a></h2>
             <h3 class="card-text">#author_name</h3>
             <div class="rating">
             
@@ -36,12 +36,12 @@ function GetData() {
         url: firebaseUrl + firebaseKnjige,
         type: "GET",
         success: function(data){
-            dodajKnjige(data);
+            dodajKorisnike(data);
         }
     });
 }
 
-function dodajKnjige (json) {
+function dodajKorisnike (json) {
     console.log(json);
     for (var i in json){
         knjige.push(json[i]);
@@ -49,6 +49,7 @@ function dodajKnjige (json) {
     for(var i in knjige){
         var knjiga;
         knjiga = temp;
+        knjiga = knjiga.replaceAll("#book_id", i);
         knjiga = knjiga.replace("#book_name", knjige[i].naziv);
         knjiga = knjiga.replace("#book_cover", knjige[i].slika);
         knjiga = knjiga.replace("#author_name", knjige[i].autor);
@@ -57,6 +58,10 @@ function dodajKnjige (json) {
         knjiga = knjiga.replace("#book_price", knjige[i].cena + " RSD");
         document.getElementById("container").innerHTML += knjiga;
     }
+}
+
+function storeBookData(id){
+    localStorage.setItem('bookID', id);
 }
 
 $(document).ready(function(){
