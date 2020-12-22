@@ -78,40 +78,40 @@
                             <form>
                                 <div class="form-group">
                                     <label for="InputKorisnickoIme">Korisnicko ime</label>
-                                    <input type="text" class="form-control" id="InputKorisnickoIme" pattern="^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$" required>
+                                    <input type="text" class="form-control" id="InputKorisnickoIme" required oninput="ValidateUsername();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPassword">Sifra</label>
-                                    <input type="password" class="form-control" id="InputPassword" pattern=".{8,}" required>
+                                    <input type="password" class="form-control" id="InputPasswordReg" required oninput="ValidatePassword();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputEmail">E-mail adresa</label>
-                                    <input type="email" class="form-control" id="InputEmail"
-                                        aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  required>
+                                    <input type="email" class="form-control" id="InputEmailReg"
+                                        aria-describedby="emailHelp" required oninput="ValidateEmail();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputIme">Ime</label>
-                                    <input type="text" class="form-control" id="InputIme" pattern="^([A-Za-z])$" maxlength="25" required>
+                                    <input type="text" class="form-control" id="InputIme" maxlength="25" required oninput="ValidateName();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPrezime">Prezime</label>
-                                    <input type="text" class="form-control" id="InputPrezime" pattern="^([A-Za-z])$" maxlength="25" required>
+                                    <input type="text" class="form-control" id="InputPrezime" maxlength="25" required oninput="ValidateLastname();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputDatumRodjenja">Datum rodjenja</label>
-                                    <input type="date" id="InputDatumRodjenja" class="form-control datepicker" required>
+                                    <input type="date" id="InputDatumRodjenja" class="form-control datepicker" required oninput="ValidateDate();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputAdresa">Adresa</label>
                                     <input placeholder="Ulica broj, Grad" type="text" class="form-control"
-                                        id="InputAdresa" pattern="" required>
+                                        id="InputAdresa" required oninput="ValidateAddress();">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputTelefon">Broj telefona</label>
                                     <input placeholder="xxx-xxx-xxxx" type="tel" class="form-control"
-                                        id="InputTelefon" pattern="^\d{3}-\d{3}-\d{4}$" required>
+                                        id="InputTelefon" required oninput="ValidatePhone();">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Registruj se</button>
+                                <button type="submit" class="btn btn-primary" id="InputButton">Registruj se</button>
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
                             </form>
                         </div>
@@ -138,6 +138,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="js/ucitajKnjige.js"></script>
+    <script src="js/validateFields.js"></script>
 </body>
 
 </html>
