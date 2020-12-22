@@ -31,8 +31,6 @@ function GetData() {
 }
 
 function dodajKorisnike(json) {
-    console.log(json);
-
     for (var i in json) {
         korisnici.push(json[i]);
     }

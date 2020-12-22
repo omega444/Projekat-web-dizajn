@@ -42,7 +42,6 @@ function GetData() {
 }
 
 function dodajKorisnike (json) {
-    console.log(json);
     for (var i in json){
         knjige.push(json[i]);
     }
