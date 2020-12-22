@@ -12,7 +12,7 @@ var headerTemplate = `
     <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="#">Pocetna<span
+            <li class="nav-item active"><a class="nav-link" href="index.html">Pocetna<span
                         class="sr-only">(current)</span></a></li>
             <li class="nav-item active"><a class="nav-link" href="upravljanjeKorisnicima.html">Upravljanje korisnicima</a></li>
             <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"

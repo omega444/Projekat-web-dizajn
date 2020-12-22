@@ -1,0 +1,4 @@
+Login treba GET
+Korpa
+Ocenjivanje
+Default dugmetu disabled za registraciju

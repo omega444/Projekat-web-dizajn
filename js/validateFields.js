@@ -2,7 +2,7 @@ var UsernameRegEx = /^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$/;
 var PasswordRegEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 var EmailRegEx = /^[a-z0-9]+([.]?[[a-z0-9])+\@[a-z]+\.[a-z]{2,}$/;
 var NameAndLastNameRegEx = /^[A-Z]{1}([a-z])*$/;
-var AddressRegEx = /^([A-Za-z ])+([0-9a-z/ ])+([,])?[A-Za-z ]*$/;
+var AddressRegEx = /(\w\s?)+ \d+, (\w\s?)+/;
 var PhoneRegEx = /^\d{3}-\d{3}-\d{3,4}$/;
 
 var ValidUsername;
