@@ -1,3 +1,2 @@
-Korpa (Dodavanje knjiga, cena i brisanje iz korpe)
 Ocenjivanje
 Brisanje knjiga i korisnika iz firebase-a

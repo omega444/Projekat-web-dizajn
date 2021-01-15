@@ -19,7 +19,7 @@ var headerTemplate = `
                     data-target="#Modal">Prijava</a></li>
             <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"
                     data-target="#Registracija" onclick="ButtonState();">Registracija</a></li>
-            <li class="nav-item active"><a class="nav-link" href="korpa.html">Korpa</a></li>
+            <li class="nav-item active"><a class="nav-link" href="korpa.html" id="cartText">Korpa</a></li>
         </ul>
     </div>
 </div>

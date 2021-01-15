@@ -25,24 +25,24 @@ var temp = `
                 </div>
                 <p class="ocena">#book_score</p>
                 <p class="cena">#book_price</p>
-                <button type="button" class="btn btn-primary">Dodaj u korpu</button>
+                <button type="button" class="btn btn-primary" onclick="AddToCart(#book_id);">Dodaj u korpu</button>
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#proveraBrisanja">Obrisi knjigu</button>
             </div>
         </div>
     </div>
 </div>`;
 
-function GetData() {
+function GetBooks() {
     $.ajax({
         url: firebaseUrl + firebaseKnjige,
         type: "GET",
         success: function(data){
-            dodajKorisnike(data);
+            dodajKnjige(data);
         }
     });
 }
 
-function dodajKorisnike (json) {
+function dodajKnjige (json) {
     for (var i in json){
         knjige.push(json[i]);
     }
@@ -65,5 +65,5 @@ function storeBookData(id){
 }
 
 $(document).ready(function(){
-    GetData();
+    GetBooks();
 });

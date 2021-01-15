@@ -2,7 +2,7 @@ var firebaseUrl = 'https://projekat-6112b-default-rtdb.firebaseio.com/';
 var firebaseKnjige = "knjige.json";
 var knjige = [];
 
-function GetData() {
+function GetBook() {
     $.ajax({
         url: firebaseUrl + firebaseKnjige,
         type: "GET",
@@ -33,5 +33,5 @@ function ucitajKnjigu(json){
 }
 
 $(document).ready(function(){
-    GetData();
+    GetBook();
 });

@@ -2,17 +2,17 @@ var firebaseUrl = 'https://projekat-6112b-default-rtdb.firebaseio.com/';
 var firebaseKnjige = "knjige.json";
 var knjige = [];
 
-function GetData() {
+function GetBooks() {
     $.ajax({
         url: firebaseUrl + firebaseKnjige,
         type: "GET",
         success: function(data){
-            ucitajKorisnika(data);
+            ucitajKnjigu(data);
         }
     });
 }
 
-function ucitajKorisnika(json){
+function ucitajKnjigu(json){
     var id = localStorage.getItem("bookID");
     for (var i in json){
         knjige.push(json[i]);
@@ -33,5 +33,5 @@ function ucitajKorisnika(json){
 }
 
 $(document).ready(function(){
-    GetData();
+    GetBooks();
 });

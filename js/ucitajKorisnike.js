@@ -20,7 +20,7 @@ var temp = `
 </tr>
 `;
 
-function GetData() {
+function GetUsers() {
     $.ajax({
         url: firebaseUrl + firebaseKorisnici,
         type: "GET",
@@ -52,5 +52,5 @@ function storeUserData(id){
 }
 
 $(document).ready(function () {
-    GetData();
+    GetUsers();
 });

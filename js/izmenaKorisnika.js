@@ -2,7 +2,7 @@ var firebaseUrl = 'https://projekat-6112b-default-rtdb.firebaseio.com/';
 var firebaseKorisnici = "korisnici.json";
 var korisnici = [];
 
-function GetData() {
+function GetUser() {
     $.ajax({
         url: firebaseUrl + firebaseKorisnici,
         type: "GET",
@@ -28,5 +28,5 @@ function ucitajKorisnika(json){
 }
 
 $(document).ready(function(){
-    GetData();
+    GetUser();
 });

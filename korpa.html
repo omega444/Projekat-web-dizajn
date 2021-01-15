@@ -41,53 +41,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row" class="border-0">
-                                            <div class="p-2">
-                                                <img src="https://i.imgur.com/kTquRc0.jpg"
-                                                    alt="Naslovna stranica knjige" width="70"
-                                                    class="img-fluid rounded shadow-sm">
-                                                <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#"
-                                                            class="text-dark d-inline-block align-middle">Na
-                                                            Drini Cuprija</a></h5><span
-                                                        class="text-muted font-weight-normal d-block">Ivo Andric</span>
-                                                </div>
-                                            </div>
-                                        </th>
-                                        <td class="border-0 align-middle text-center"><strong>950,00 RSD</strong></td>
-                                        <td class="border-0 align-middle text-center"><input class="quantity" min="1"
-                                                name="quantity" value="1" type="number"></td>
-                                        <td class="border-0 align-middle text-center"><button
-                                                class="btn btn-danger btn-sm rounded-0" type="submit"
-                                                data-placement="top" title="Obrisi"><i class="fa fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="border-0">
-                                            <div class="p-2">
-                                                <img src="https://i.imgur.com/LfrIt2t.jpeg"
-                                                    alt="Naslovna stranica knjige" width="70"
-                                                    class="img-fluid rounded shadow-sm">
-                                                <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#"
-                                                            class="text-dark d-inline-block align-middle">Moby Dick</a>
-                                                    </h5><span class="text-muted font-weight-normal d-block">Herman
-                                                        Melville</span>
-                                                </div>
-                                            </div>
-                                        </th>
-                                        <td class="border-0 align-middle text-center"><strong>470,00 RSD</strong></td>
-                                        <td class="border-0 align-middle text-center"><input class="quantity" min="1"
-                                                name="quantity" value="1" type="number"></td>
-                                        <td class="border-0 align-middle text-center"><button
-                                                class="btn btn-danger btn-sm rounded-0" type="submit"
-                                                data-placement="top" title="Obrisi"><i class="fa fa-trash"></i></button>
-                                        </td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
-                            <p class="text-right"><b>0000 RSD</b></p>
+                            <p class="text-right"><b id="totalcost">0 RSD</b></p>
                             <button type="submit" class="btn btn-success pull-right">Kupi</button>
                         </div>
                     </div>
@@ -108,6 +65,7 @@
         crossorigin="anonymous"></script>
     <script src="js/validacijaUnosa.js"></script>
     <script src="js/loginKorisnika.js"></script>
+    <script src="js/korpa.js"></script>
     <script src="js/dodajHeaderFooter.js"></script>
 </body>
 

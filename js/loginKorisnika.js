@@ -10,7 +10,6 @@ function GetUser() {
             for (var i in data){
                 korisnici.push(data[i]);
             }
-            console.log(data);
         }
     });
 }
