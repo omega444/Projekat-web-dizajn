@@ -1,4 +1,3 @@
-Login treba GET
-Korpa
+Korpa (Dodavanje knjiga, cena i brisanje iz korpe)
 Ocenjivanje
-Default dugmetu disabled za registraciju
+Brisanje knjiga i korisnika iz firebase-a

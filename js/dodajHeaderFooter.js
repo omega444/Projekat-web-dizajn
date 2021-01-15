@@ -18,7 +18,7 @@ var headerTemplate = `
             <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"
                     data-target="#Modal">Prijava</a></li>
             <li class="nav-item active"><a class="nav-link" href="#" data-toggle="modal"
-                    data-target="#Registracija">Registracija</a></li>
+                    data-target="#Registracija" onclick="ButtonState();">Registracija</a></li>
             <li class="nav-item active"><a class="nav-link" href="korpa.html">Korpa</a></li>
         </ul>
     </div>
@@ -43,7 +43,7 @@ var headerTemplate = `
                         <label for="InputPassword">Sifra</label>
                         <input type="password" class="form-control" id="InputPassword">
                     </div>
-                    <button type="submit" class="btn btn-primary">Prijavi se</button>
+                    <button type="button" class="btn btn-primary" onclick="Login();">Prijavi se</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
                 </form>
             </div>

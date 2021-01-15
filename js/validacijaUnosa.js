@@ -5,16 +5,14 @@ var NameAndLastNameRegEx = /^[A-Z]{1}([a-z])*$/;
 var AddressRegEx = /(\w\s?)+ \d+, (\w\s?)+/;
 var PhoneRegEx = /^\d{3}-\d{3}-\d{3,4}$/;
 
-var ValidUsername;
-var ValidPassword;
-var ValidEmail;
-var ValidName;
-var ValidLastname;
-var ValidDate;
-var ValidAddress;
-var ValidPhone;
-
-ButtonState();
+var ValidUsername = false;
+var ValidPassword = false ;
+var ValidEmail = false;
+var ValidName = false;
+var ValidLastname = false;
+var ValidDate = false;
+var ValidAddress = false;
+var ValidPhone = false;
 
 function ValidateUsername(){
     var elementValue = document.getElementById('InputKorisnickoIme').value;
