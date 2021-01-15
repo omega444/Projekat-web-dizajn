@@ -3,32 +3,33 @@ var firebaseKnjige = "knjige.json";
 var knjige = [];
 var temp = `
 <div class="card mb-3">
-<div class="row no-gutters">
-    <div class="col-md-4">
-        <a href="pojedinacnaKnjiga.html" onclick="storeBookData(#book_id)"><img class="card-img" src="#book_cover"
-                alt="naslovnaStranica"></a>
-    </div>
-    <div class="col-md-8">
-        <div class="card-body">
-            <h2 class="card-title"><a href="pojedinacnaKnjiga.html#2" onclick="storeBookData(#book_id)">#book_name</a></h2>
-            <h3 class="card-text">#author_name</h3>
-            <div class="rating">
-            
-                <div class="rating_bar">
-			        <span class="rate_1"></span>
-			        <span class="rate_2"></span>
-			        <span class="rate_3"></span>
-			        <span class="rate_4"></span>
-                    <span class="rate_5"></span>
-                </div>
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <a href="pojedinacnaKnjiga.html" onclick="storeBookData(#book_id)"><img class="card-img" src="#book_cover"
+                    alt="naslovnaStranica"></a>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h2 class="card-title"><a href="pojedinacnaKnjiga.html#2" onclick="storeBookData(#book_id)">#book_name</a></h2>
+                <h3 class="card-text">#author_name</h3>
+                <div class="rating">
                 
+                    <div class="rating_bar">
+                        <span class="rate_1"></span>
+                        <span class="rate_2"></span>
+                        <span class="rate_3"></span>
+                        <span class="rate_4"></span>
+                        <span class="rate_5"></span>
+                    </div>
+                    
+                </div>
+                <p class="ocena">#book_score</p>
+                <p class="cena">#book_price</p>
+                <button type="button" class="btn btn-primary">Dodaj u korpu</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#proveraBrisanja">Obrisi knjigu</button>
             </div>
-            <p class="ocena">#book_score</p>
-            <p class="cena">#book_price</p>
-            <button type="button" class="btn btn-primary">Dodaj u korpu</button>
         </div>
     </div>
-</div>
 </div>`;
 
 function GetData() {

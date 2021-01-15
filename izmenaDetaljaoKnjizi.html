@@ -28,26 +28,33 @@
                         <a href="pojedinacnaKnjiga.html"><button type="submit"
                                 class="btn btn-info float-right mt-4 mr-4">Primeni</button></a>
                         <div class="card-body">
-                            <h2 class="card-title"><textarea name="ispravkaNaslova" rows="1"
-                                    id="Title">Naslov</textarea></h2>
-                            <h3 class="card-text"><textarea name="ispravkaAutora" rows="1" id="Author">Autor</textarea>
-                            </h3>
+                            <h2 class="card-title"><input type="text" name="ispravkaNaslova" value="Naslov"
+                                    id="Title"></h2>
+                            <h3 class="card-text"><input type="text" name="ispravkaAutora" id="Author" value="Autor"></h3>
                             <p class="card-text" id="Year">Godina izdavanja</p>
                             <p class="card-text" id="ISBN">ISBN</p>
                             <label for="PgNum"><b>Broj stranica:</b></label>
-                            <p class="card-text"><textarea name="ispravkaBrStranica" rows="1"
-                                    id="PgNum">Broj stranica</textarea></p>
-                            <label for="Language"><b>Tip poveza:</b></label>
-                            <p class="card-text"><textarea name="ispravkaTipaPoveza" rows="1"
-                                    id="CoverType">Tip poveza</textarea></p>
-                            <label for="Writting"><b>Pismo:</b></label>
-                            <p class="card-text"><textarea name="ispravkaPisma" rows="1" id="Writting">Pismo</textarea>
+                            <p class="card-text"><input type="number" name="ispravkaBrStranica"
+                                    id="PgNum" value="000"></p>
+                            <label for="ispravkaTipaPoveza"><b>Tip poveza:</b></label>
+                            <p class="card-text">
+                                <select name="ispravkaTipaPoveza" id="CoverType">
+                                    <option value="Tvrdi">Tvrdi</option>
+                                    <option value="Meki">Meki</option>
+                                </select>
                             </p>
-                            <label for="Language"><b>Jezik:</b></label>
-                            <p class="card-text"><textarea name="ispravkaJezika" id="Language">Jezik</textarea></p>
+                            <label for="ispravkaPisma"><b>Pismo:</b></label>
+                            <p class="card-text">
+                                <select name="ispravkaPisma" id="Writting">
+                                    <option value="Ćirilica">Cirilica</option>
+                                    <option value="Latinica">Latinica</option>
+                                </select>
+                            </p>
+                            <label for="ispravkaJezika"><b>Jezik:</b></label>
+                            <p class="card-text"><input type="text" value="Jezik" name="ispravkaJezika" id="Language"></p>
                             <p class="card-text" id="Score">Prosecna ocena</p>
                             <label for="Price"><b>Cena:</b></label>
-                            <p class="card-text"><textarea name="ispravkaCene" rows="1" id="Price">Cena</textarea></p>
+                            <p class="card-text"><input type="number" value="cena" name="ispravkaCene" id="Price"></p>
                             <label for="Desc"><b>Kratak opis:</b></label>
                             <p class="card-text"><textarea name="ispravkaOpisa" rows="1" id="Desc"
                                     class="desc">Kratak opis</textarea></p>

@@ -24,21 +24,25 @@
                 <div class="row no-gutters">
                     <div class="col-md-12">
                         <a href="pojedinacanKorisnik.html"><button type="submit"
-                                    class="btn btn-info float-right mt-4 mr-4">Primeni</button></a>
+                                class="btn btn-info float-right mt-4 mr-4">Primeni</button></a>
                         <div class="card-body">
 
                             <h1 class="card-title text-center">Detalji korisnika</h1>
-                            <h3 class="card-text"><textarea name="ispravkaImena" rows="1" id="Name">Ime</textarea></h3>
-                            <h3 class="card-text"><textarea name="ispravkaPrezimena" rows="1" id="Lastname">Prezime</textarea></h3>
-                            <p class="card-text" id="Birth">Datum rodjenja</p>
+                            <h3 class="card-text"><input type="text" name="ispravkaImena" id="Name" value="Ime"></h3>
+                            <h3 class="card-text"><input type="text" name="ispravkaPrezimena" id="Lastname"
+                                    value="Prezime"></h3>
+                            <label for="Birth"><b>Datum rodjenja:</b></label>
+                            <p class="card-text"><input type="text" value="Datum rodjenja" id="Birth"></p>
                             <label for="Adress"><b>Adresa:</b></label>
-                            <p class="card-text"><textarea name="ispravkaAdrese" rows="1" id="Adress">Adresa</textarea></p>
+                            <p class="card-text"><input type="text" name="ispravkaAdrese" id="Adress" value="Adresa">
+                            </p>
                             <p class="card-text" id="Username">Korisnicko ime</p>
                             <label for="Email"><b>Email:</b></label>
-                            <p class="card-text"><textarea name="ispravkaEmail" rows="1" id="Email">Email</textarea></p>
+                            <p class="card-text"><input type="email" name="ispravkaEmail" id="Email"
+                                    value="email@mail.com"></p>
                             <label for="Phone"><b>Broj telefona:</b></label>
-                            <p class="card-text"><textarea name="ispravkaBrojaTelefona"
-                                    rows="1" id="Phone">Broj Telefona</textarea></p>
+                            <p class="card-text"><input type="text" name="ispravkaBrojaTelefona" id="Phone"
+                                    value="Broj telefona"></p>
                         </div>
                     </div>
                 </div>

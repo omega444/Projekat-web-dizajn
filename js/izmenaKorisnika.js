@@ -18,13 +18,13 @@ function ucitajKorisnika(json){
         korisnici.push(json[i]);
     }
 
-    document.getElementById("Name").innerHTML = korisnici[id].ime;
-    document.getElementById("Lastname").innerHTML = korisnici[id].prezime;
-    document.getElementById("Birth").innerHTML = "<b>Datum rodjenja: </b>" + korisnici[id].datumRodjenja;
-    document.getElementById("Adress").innerHTML = korisnici[id].adresa;
+    document.getElementById("Name").value = korisnici[id].ime;
+    document.getElementById("Lastname").value = korisnici[id].prezime;
+    document.getElementById("Birth").value = korisnici[id].datumRodjenja;
+    document.getElementById("Adress").value = korisnici[id].adresa;
     document.getElementById("Username").innerHTML = "<b>Korisnicko ime: </b>" + korisnici[id].username;
-    document.getElementById("Email").innerHTML = korisnici[id].email;
-    document.getElementById("Phone").innerHTML = korisnici[id].telefon;
+    document.getElementById("Email").value = korisnici[id].email;
+    document.getElementById("Phone").value = korisnici[id].telefon;
 }
 
 $(document).ready(function(){

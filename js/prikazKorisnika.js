@@ -24,6 +24,7 @@ function ucitajKorisnika(json){
     document.getElementById("Adress").innerHTML = "<b>Adresa: </b>" + korisnici[id].adresa;
     document.getElementById("Username").innerHTML = "<b>Korisnicko ime: </b>" + korisnici[id].username;
     document.getElementById("Email").innerHTML = "<b>Email: </b>" + korisnici[id].email;
+    document.getElementById("Password").innerHTML = "<b>Sifra: </b>" + korisnici[id].password;
     document.getElementById("Phone").innerHTML = "<b>Broj telefona: </b>" + korisnici[id].telefon;
 }
 
