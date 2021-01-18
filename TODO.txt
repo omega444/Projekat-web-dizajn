@@ -1,2 +1,0 @@
-Ocenjivanje
-Brisanje knjiga i korisnika iz firebase-a

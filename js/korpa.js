@@ -57,7 +57,6 @@ function LoadCart() {
     for (var i in elements) {
         korpa[i] = parseInt(elements[i]);
     }
-    console.log(korpa);
     for (var i in korpa) {
         var knjiga = temp2;
         knjiga = knjiga.replaceAll("#book_id", i);
