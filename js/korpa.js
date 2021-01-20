@@ -66,7 +66,9 @@ function LoadCart() {
         knjiga = knjiga.replace("#book_cost", knjige[korpa[i]].cena + " RSD");
         knjiga = knjiga.replace("#author_name", knjige[korpa[i]].autor);
 
-        document.querySelector("tbody").innerHTML += knjiga;
+        if(document.querySelector("tbody")){
+            document.querySelector("tbody").innerHTML += knjiga;
+        }
     }
     DisplayValue();
     UpdateCartText();
@@ -75,7 +77,9 @@ function LoadCart() {
 function DisplayValue() {
     var total = 0;
     for (var i in korpa) {
-        total += parseInt(knjige[korpa[i]].cena * document.getElementById("input_" + i).value);
+        if(document.getElementById("input_" + i)){
+            total += parseInt(knjige[korpa[i]].cena * document.getElementById("input_" + i).value);
+        }
     }
     if (document.getElementById("totalcost")) {
         document.getElementById("totalcost").innerText = total + " RSD";
