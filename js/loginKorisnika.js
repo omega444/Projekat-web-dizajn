@@ -1,14 +1,14 @@
 var firebaseUrl = 'https://projekat-6112b-default-rtdb.firebaseio.com/';
 var firebaseKorisnici = "korisnici.json";
-var korisnici = [];
+var korisniciLogin = [];
 
-function GetUser() {
+function GetUserLogin() {
     $.ajax({
         url: firebaseUrl + firebaseKorisnici,
         type: "GET",
         success: function(data){
             for (var i in data){
-                korisnici.push(data[i]);
+                korisniciLogin.push(data[i]);
             }
         }
     });
@@ -18,8 +18,8 @@ function Login(){
     var email = document.getElementById("InputEmail").value;
     var password = document.getElementById("InputPassword").value;
     var success = false;
-    for(var i in korisnici){
-        if(email == korisnici[i].email && password == korisnici[i].password){
+    for(var i in korisniciLogin){
+        if(email == korisniciLogin[i].email && password == korisniciLogin[i].password){
             success = true;
             alert("Uspesno ste se prijavili");
         }
@@ -30,5 +30,5 @@ function Login(){
 }
 
 $(document).ready(function(){
-    GetUser();
+    GetUserLogin();
 });
