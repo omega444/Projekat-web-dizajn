@@ -8,7 +8,6 @@ function GetUser() {
         type: "GET",
         success: function(data){
             ucitajKorisnika(data);
-            console.log(data);
         }
     });
 }
